@@ -1,0 +1,9 @@
+Design Memo – Hospital Data Structures
+
+For this assignment, I created two systems using different data structures to help manage a hospital. The first system uses a binary tree to represent the reporting structure between doctors. I chose a tree because it makes it easier to organize doctors based on who they report to. Each doctor is represented by a node, and the left and right children represent doctors working under them. This allows the hospital to visualize its management structure in an organized way.
+
+The doctor tree also uses three traversal methods: preorder, inorder, and postorder. Preorder traversal could be useful when hospital management wants to review supervisors before their staff. Inorder traversal could help display the doctors in a consistent structural order. Postorder traversal could be useful when collecting reports from lower-level doctors before sending the information to their supervisors.
+
+The second system uses a min-heap to manage patients in the emergency room. I chose a min-heap because patients should be treated based on urgency instead of the order they arrive. In this system, a lower urgency number means the patient has a higher priority. The heapify_up and heapify_down methods help maintain the correct priority after patients are added or removed.
+
+Overall, this assignment helped me understand how different data structures can solve different problems. Binary trees are useful for representing hierarchies, while min-heaps are useful for managing priorities efficiently. Both structures demonstrate how software can improve organization and workflow in a hospital.
